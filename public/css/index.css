@@ -1,0 +1,445 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--PACE-LOADING--*/
+.pace .pace-progress {
+	background: #f15f97;
+	position: fixed;
+	z-index: 10000;
+	top: 0%;
+	left: 0%;
+	height: 1px;
+
+	-webkit-transition: width 1s;
+	-moz-transition: width 1s;
+	-o-transition: width 1s;
+	transition: width 1s;
+}
+
+.pace-inactive {
+	display: none;
+}
+/*##PACE-LOADING##*/
+
+/*--font-face--*/
+@font-face {
+  font-family: 'thaisans_neueultra_light';
+  src: url('../fonts/thaisansneue/thaisansneue-ultralight-webfont.eot');
+  src: url('../fonts/thaisansneue/thaisansneue-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/thaisansneue/thaisansneue-ultralight-webfont.woff2') format('woff2'),
+	   url('../fonts/thaisansneue/thaisansneue-ultralight-webfont.woff') format('woff'),
+	   url('../fonts/thaisansneue/thaisansneue-ultralight-webfont.ttf') format('truetype'),
+	   url('../fonts/thaisansneue/thaisansneue-ultralight-webfont.svg#thaisans_neueultra_light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thaisans_neuelight';
+  src: url('../fonts/thaisansneue/thaisansneue-light-webfont.eot');
+  src: url('../fonts/thaisansneue/thaisansneue-light-webfont.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/thaisansneue/thaisansneue-light-webfont.woff2') format('woff2'),
+	   url('../fonts/thaisansneue/thaisansneue-light-webfont.woff') format('woff'),
+	   url('../fonts/thaisansneue/thaisansneue-light-webfont.ttf') format('truetype'),
+	   url('../fonts/thaisansneue/thaisansneue-light-webfont.svg#thaisans_neuelight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thaisans_neueregular';
+  src: url('../fonts/thaisansneue/thaisansneue-regular-webfont.eot');
+  src: url('../fonts/thaisansneue/thaisansneue-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/thaisansneue/thaisansneue-regular-webfont.woff2') format('woff2'),
+	   url('../fonts/thaisansneue/thaisansneue-regular-webfont.woff') format('woff'),
+	   url('../fonts/thaisansneue/thaisansneue-regular-webfont.ttf') format('truetype'),
+	   url('../fonts/thaisansneue/thaisansneue-regular-webfont.svg#thaisans_neueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thaisans_neuebold';
+  src: url('../fonts/thaisansneue/thaisansneue-bold-webfont.eot');
+  src: url('../fonts/thaisansneue/thaisansneue-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/thaisansneue/thaisansneue-bold-webfont.woff2') format('woff2'),
+	   url('../fonts/thaisansneue/thaisansneue-bold-webfont.woff') format('woff'),
+	   url('../fonts/thaisansneue/thaisansneue-bold-webfont.ttf') format('truetype'),
+	   url('../fonts/thaisansneue/thaisansneue-bold-webfont.svg#thaisans_neuebold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thaisans_neueextra_bold';
+  src: url('../fonts/thaisansneue/thaisansneue-extrabold-webfont.eot');
+  src: url('../fonts/thaisansneue/thaisansneue-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/thaisansneue/thaisansneue-extrabold-webfont.woff2') format('woff2'),
+	   url('../fonts/thaisansneue/thaisansneue-extrabold-webfont.woff') format('woff'),
+	   url('../fonts/thaisansneue/thaisansneue-extrabold-webfont.ttf') format('truetype'),
+	   url('../fonts/thaisansneue/thaisansneue-extrabold-webfont.svg#thaisans_neueextra_bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello/fontello.eot?885162');
+  src: url('../fonts/fontello/fontello.eot?885162#iefix') format('embedded-opentype'),
+       url('../fonts/fontello/fontello.woff?885162') format('woff'),
+       url('../fonts/fontello/fontello.ttf?885162') format('truetype'),
+       url('../fonts/fontello/fontello.svg?885162#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*##font-face##*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	height: 100%;
+	background: #eeeeee url(../imgs/pattern-bg.png) repeat;
+	background-size: 140px 140px;
+	font-family: 'thaisans_neueregular';
+}
+
+.preventselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+	display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  background: transparent;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+  width: 100%;
+	background: rgba(255, 255, 255, 0.3);
+	z-index: 9999;
+}
+
+.header-sm-xs {
+	position: fixed;
+	top: 0;
+  width: 100%;
+	z-index: 9999;
+}
+
+.navbar-default .navbar-nav > li > a {
+	padding-top:14px;
+	padding-bottom:0;
+	height: 45px;
+	font-size: 22px;
+}
+.navbar-default .navbar-nav > li > a:active {
+	background: #f15f97;
+	color: #FFF;
+	border: 0;
+    outline: none;
+}
+.navbar {min-height:28px !important;}
+
+.navbar-default .navbar-toggle {
+  border: 0px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.home-logo {
+	position: relative;
+	float: left;
+	display: block;
+}
+
+.header ul {
+	display: block;
+	float: right;
+	list-style-type: none;
+}
+
+.header ul li {
+	position: relative;
+	display: inline-block;
+	margin: 14px 0 0 20px;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+ul a, .header ul a:visited, .header ul a:active {
+	padding: 5px;
+	color: #414141;
+	text-decoration: none;
+}
+
+ul a:hover {
+	padding: 5px;
+	color: #f15f97;
+	text-decoration: none;
+}
+
+.offset:before {
+	display: block;
+	content: " ";
+	height: 60px;	  /* Give height of your fixed element */
+	margin-top: -60px; /* Give negative margin of your fixed element */
+	visibility: hidden;
+}
+
+section {
+	width: 100%;
+	position: relative;
+}
+
+.countdown-section {
+	background: #ffffff;
+}
+
+a.baan-button, a.baan-button:visited, a.baan-button:active, a.baan-button:hover {
+	color: #f15f97;
+	text-decoration: none;
+}
+
+.wrap-card {
+	text-align: center;
+}
+
+.card {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	background: #ffffff;
+	margin: 10px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.wrap-card-data {
+	display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+	width: 200px;
+	height: 200px;
+}
+
+.screen {
+	position: absolute;
+	width: 192px;
+	height: 192px;
+	margin-top: 4px;
+	margin-left: 4px;
+	background: rgba(255, 255, 255, 0.9);
+	z-index: 1;
+	font-size: 22px;
+	color: #000000;
+	/*border: 2px solid #000000;*/
+	/*box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);*/
+	opacity: 0;
+	/*visibility: hidden;*/
+}
+
+.card-sm-xs {
+	display: inline-block;
+	width: 200px;
+	height: 280px;
+	background: #ffffff;
+	margin: 10px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.wrap-card-data-sm-xs {
+	display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+	width: 200px;
+	height: 80px;
+}
+
+.screen-sm-xs {
+	position: absolute;
+	width: 200px;
+	height: 80px;
+	background: rgba(255, 255, 255, 0.9);
+	z-index: 1;
+	font-size: 18px;
+	color: #000000;
+}
+
+.footer {
+  /*position: absolute;
+  bottom: 0;*/
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.text-bold {
+	font-family: 'thaisans_neuebold';
+}
+
+.topic-text {
+	font-family: 'thaisans_neuebold';
+	font-size: 40px;
+	line-height: 32px;
+	color: #f15f97;
+}
+
+.content-text {
+	font-family: 'thaisans_neueregular';
+	font-size: 22px;
+	line-height: 26px;
+	color: #414141;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.social {
+	padding: 0 20px;
+	opacity: 0.5;
+}
+
+.footer a, .footer a:visited, .footer a:active {
+	color: #000000;
+		text-decoration: none;
+}
+
+.footer a:hover {
+	color: #000000;
+		text-decoration: none;
+}
+
+.arrow-up {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #ffffff;
+}
+
+.contact-icon-link {
+}
+
+.loading-text {
+	font-family: 'thaisans_neueregular';
+	font-size: 22px;
+	line-height: 26px;
+	color: #414141;
+	padding-top: 14px;
+}
+.section-header-seperator {
+	position: relative;
+	width: 80px;
+	left: 50%;
+	margin: 20px 0 20px -40px;
+	height: 1px;
+	background: #414141;
+}
+
+.nationalid-input {
+	font-size: 30px;
+	height: 50px;
+	text-align: center;
+	margin-top: 10px;
+	letter-spacing: 2px;
+}
+
+.btn{
+	font-size: 18px;
+	height: 34px;
+	line-height: 18px;
+	border-style: dashed;
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus,
+.btn-group:focus, .btn-default:active:focus, .btn-default.active:focus,
+.btn-default.focus, .btn-default:active.focus, .btn-default.active.focus {
+	outline: none;
+		border-color: #999;
+		border-style: solid;
+		-webkit-appearance: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+}
+
+.btn-confirm {
+	color: #FFF;
+	font-size: 24px;
+	height: 34px;
+	background: rgba(241, 95, 151, 1);
+	border-color: rgba(241, 95, 151, 1);
+	padding: 5px 15px 5px 15px;
+	width: 100%;
+	height: 40px;
+}
+
+.btn-confirm[disabled], .btn-confirm:focus[disabled] {
+	background: rgb(237, 237, 237);
+	border-color: rgb(178, 178, 178);
+	color: #bababa;
+}
+
+.btn-confirm:focus, .btn-confirm:hover, .btn-confirm:active:focus {
+	color: #FFF;
+	background: rgba(212, 41, 106, 1);
+	-webkit-appearance: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid rgba(212, 41, 106, 1);
+}
+
+.error-code {
+	color: #CCC;
+	font-size: 20px;
+}
+.error-msg {
+	color: rgba(237, 85, 100, 1);
+	font-size: 30px;
+}
+.person-info {
+	border: 1px dashed #CCC;
+	padding: 10px 18px;
+	font-size: 20px;
+}
+.person-info-header {
+	text-align: right;
+	font-weight: bold;
+	border-right: 1px solid #ccc;
+	word-wrap: break-word;
+}
+.person-info-alt {
+	background: #F6F6F6;
+}
+.border-l {
+	border-left: 1px solid #ccc;
+	margin-left:-1px;
+}

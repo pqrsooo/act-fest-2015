@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Act Fest Registration 2015</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<!--<%= include GoogleAnalytics %>-->
+</head>
+<body>
+	<header class="header hidden-xs">
+		<div class="container-fluid">
+			<div class="row" style="margin: 10px 2% 10px 2%;">
+					<a class="home-logo pointer"><img class="img-responsive" src="imgs/header_logo.png" width="145" height="60"></a>
+					<ul>
+						<li><a class="m-1">ดูผลการเลือกบ้าน</a></li>
+						<li><a class="m-2">รายชื่อบ้าน</a></li>
+					</ul>
+			</div>
+		</div>
+	</header>
+
+	<header class="header-sm-xs hidden-sm hidden-md hidden-lg">
+		<div class="container-fluid" style="padding:0; height: 60px;">
+			<nav class="navbar navbar-default navbar-static-top" style="padding: 0 0 0 0; border: 0px; border-bottom: 1px solid #CCC; background: rgba(255, 255, 255, 0.95);">
+				<div class="container-fluid">
+					<div class="navbar-header"	style="padding: 10px 0 10px 2%; border: 0px;">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" style="width: 50px; height: 40px; padding:2px 0 0 14px; margin: 0 1.5% 0 0;">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="home-logo pointer" href="#"><img class="img-responsive" src="imgs/header_logo_sm_xs.png" width="97" height="40"></a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="navbar-collapse-1"	style="border: 0px;">
+						<ul class="nav navbar-nav navbar-right text-center" style="font-size: 18px;">
+							<li><a data-toggle="collapse" data-target="#navbar-collapse-1" href="#result_section" class="m-1">ดูผลการเลือกบ้าน</a></li>
+							<li><a data-toggle="collapse" data-target="#navbar-collapse-1" href="#baanlist_section" class="m-2">รายชื่อบ้าน</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<section class="main-section" style="background: rgba(255, 255, 255, 0.3); z-index: 6;">
+		<div class="container-fluid">
+			<div class="row" style="margin: 25px 0 0 0;">
+				<img class="img-responsive center-block" src="imgs/cu_together_logo.png" width="528" height="299">
+			</div>
+			<br>
+			<div class="row" style="margin: 0;">
+				<div class="arrow-up center-block"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="result-section offset" id="result_section" style="z-index: 2;">
+		<div class="container-fluid" style="background: #ffffff;">
+			<div class="row text-center" style="margin: 30px 0 0 0;">
+				<span style="font-family: 'fontello'; font-size: 50px; line-height: 50px; color: #f15f97;">&#xe804;</span>
+			</div>
+			<div class="row" style="margin: 15px 0 0 0;">
+				<div class="col-md-12 text-center" style="padding: 0 0 0 0;" style="font-size: 24px; line-height: 24px; color: #f15f97;">
+					<span class="topic-text">ดูผลการเลือกบ้าน</span>
+				</div>
+			</div>
+			<div class="section-header-seperator"></div>
+			<div class="row" style="margin: 0 0 20px 0;">
+				<div class="col-md-8 col-md-offset-2 text-center" style="padding: 0 5% 0 5%;">
+					<p class="content-text">
+						ขณะนี้ ผลการเลือกบ้านได้ประกาศแล้ว น้องๆ สามารถเช็คข้อมูลได้ด้านล่างนี้ หรือสามารถดูรายชื่อทั้งหมดได้<a href="javascript:alert('รอลิงค์ .pdf');" class="รายชื่อบ้านรับน้อง">ที่นี่</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="row" style="margin-top: 40px; margin-bottom: 50px;" id="recheck_form">
+				<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center content-text">
+					<form class="">
+						<div class="form-group">
+							<label for="nationalID" class="control-label">รหัสประจำตัวประชาชน หรือรหัส Passport</label>
+							<input type="text" class="form-control nationalid-input" id="nationalID" placeholder="">
+						</div>
+						<button id='recheck_btn' type='button' class="btn btn-confirm" autocomplete="off">ตรวจสอบ</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="row" style="margin-bottom: 40px; display: none;" id="recheck_info_container">
+				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+					<div style="height: 1px; background: #aaa; margin-bottom: 15px; z-index: 0;"></div>
+				</div>
+				<div class="col-sm-10 col-sm-offset-1 text-center" id="recheck_info">
+				</div>
+			</div>
+
+			<div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+				<div class="col-md-10 col-md-offset-1 text-center" style="padding: 0 5% 0 5%;">
+					<p class="content-text">
+					</p>
+					<p class="content-text">
+						หากไม่พบข้อมูลหรือข้อมูลไม่ถูกต้อง กรุณาติดต่อทีมผู้ดำเนินงานผ่านทาง<a href="https://www.facebook.com/sgcu.obj" title="Facebook Fanpage" target="_blank">เฟซบุ๊กแฟนเพจ</a >หรือผ่านทาง<a href="https://www.facebook.com/chulafreshmen?fref=ts" title="CU for Freshmen" target="_blank">แฟนเพจรับน้องก้าวใหม่</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="baanlist-section offset" id="baanlist_section" style="background: rgba(255, 255, 255, 0.2); z-index: 3; padding-bottom: 35px;">
+		<div class="container-fluid">
+			<div class="row text-center" style="margin: 30px 0 0 0;">
+				<span style="font-family: 'fontello'; font-size: 50px; line-height: 50px; color: #f15f97;">&#xe804;</span>
+			</div>
+			<div class="row" style="margin: 15px 0 0 0;">
+				<div class="col-md-12 text-center" style="padding: 0 0 0 0;" style="font-size: 24px; line-height: 24px; color: #f15f97;">
+					<span class="topic-text">รายชื่อบ้าน '58</span>
+				</div>
+			</div>
+			<div class="section-header-seperator"></div>
+			<div class="row">
+				<div class="col-md-12 text-center" style="padding: 0 5% 0 5%; font-size: 24px; line-height: 24px; color: #f15f97;">
+					<p class="content-text" style="text-align: center; margin-bottom: 25px;">
+						สามารถดูรายชื่อบ้านได้ที่นี่
+					</p>
+					<a id="baanlist_show_button" class="baan-button pointer" style="border: 2px solid #f15f97; padding: 4px 20px 4px 20px;">แสดงรายชื่อบ้าน</a>
+				</div>
+			</div>
+			<div class="row center-block" id="baanlist_placeholder" style="display:none;">
+				<div class="col-md-10 col-md-offset-1" style="padding: 0 5% 40px 5%;" id="baan_data">
+					<p class="loading-text text-center"><img src="imgs/loading-bubbles.svg" alt=""/> กำลังโหลดข้อมูลบ้าน...</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SCRIPT SECTION -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+	<!--<script src="js/pace.min.js"></script>-->
+	<script src="js/index.js"></script>
+</body>
+</html>
