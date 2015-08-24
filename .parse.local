@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "ActFest": {
+      "applicationId": "S5buqd8nX0HvrNNQ5w2ZRk69LNzJNMOe2mCdyycR"
+    },
+    "_default": {
+      "link": "ActFest"
+    }
+  }
+}
