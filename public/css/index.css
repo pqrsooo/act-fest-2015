@@ -101,8 +101,9 @@ html {
 
 body {
 	height: 100%;
-	background: #eeeeee url(../imgs/pattern-bg.png) repeat;
-	background-size: 140px 140px;
+	/*background: #eeeeee url(../imgs/pattern-bg.png) repeat;
+	background-size: 140px 140px;*/
+	background: #ffffff;
 	font-family: 'thaisans_neueregular';
 }
 
