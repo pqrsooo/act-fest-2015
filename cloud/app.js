@@ -22,9 +22,6 @@ app.get('/index.html', function(req, res) {
   res.render('index', { message: 'Congrats, you just set up your app!' });
 });
 
-app.locals.parseApplicationId = 'S5buqd8nX0HvrNNQ5w2ZRk69LNzJNMOe2mCdyycR';
-app.locals.parseJavascriptKey = 'cYbVSxPhYXVulG086z8VyVlpsNbYsqy1CDvcl6YE';
-
 // // Example reading from the request query string of an HTTP get request.
 // app.get('/test', function(req, res) {
 //   // GET http://example.parseapp.com/test?message=hello

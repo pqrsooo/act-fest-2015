@@ -28,12 +28,20 @@
 					<form class="">
 						<div class="form-group">
 							<label for="studentID" class="control-label">รหัสประจำตัวนิสิต (Student ID)</label>
-							<input type="text" class="form-control studentid-input" id="studentID" placeholder="">
+							<input type="text" class="form-control studentid-input" id="studentID" placeholder="" autocomplete="off" maxlength="10">
 						</div>
 						<button id='recheck_btn' type='button' class="btn btn-confirm" autocomplete="off">ยืนยัน</button>
 					</form>
 				</div>
 			</div>
+
+			
+
+			<!--<div class="row" style="margin-top: 10px; margin-bottom: 50px;">
+				<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center content-text">
+					123456
+				</div>
+			</div>-->
 
 			<div class="row" style="margin-bottom: 40px; display: none;" id="recheck_info_container">
 				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
@@ -63,6 +71,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+	<script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
 	<script src="js/pace.min.js"></script>
 	<script src="js/index.js"></script>
 </body>
