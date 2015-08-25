@@ -102,7 +102,7 @@ $(function() {
     }, 350);
   });
 
-  function loadBaanList() {
+  /*function loadBaanList() {
     $.getJSON('./rest/baanData')
     .done(function(resp) {
       if (resp.status === 'error') {
@@ -204,11 +204,11 @@ $(function() {
     $('#baanlist_show_button').hide();
     $('#baanlist_placeholder').show();
     loadBaanList();
-  });
+  });*/
 
   // Student info checking
 
-  var $recheckBtn = $('#recheck_btn');
+  /*var $recheckBtn = $('#recheck_btn');
   var loadingHtml = '<br><p class="loading-text text-center"><img src="imgs/loading-bubbles.svg" alt=""/> กรุณารอสักครู่...</p>';
 
   var connErrorHtml = '<h2 class="error-msg"><span class="icon-error" style="font-family: ' + 'fontello' + '; font-size: 25px;">&#xe810;</span> มีปัญหาในการเชื่อมต่อเซิร์ฟเวอร์ กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของท่าน และลองใหม่อีกครั้ง</h2>';
@@ -313,6 +313,6 @@ $(function() {
     });
   };
 
-  $recheckBtn.click(checkStudentInfo);
+  $recheckBtn.click(checkStudentInfo);*/
 
 });
