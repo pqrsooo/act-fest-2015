@@ -83,15 +83,15 @@
 }
 
 @font-face {
-  font-family: 'fontello';
-  src: url('../fonts/fontello/fontello.eot?885162');
-  src: url('../fonts/fontello/fontello.eot?885162#iefix') format('embedded-opentype'),
-       url('../fonts/fontello/fontello.woff?885162') format('woff'),
-       url('../fonts/fontello/fontello.ttf?885162') format('truetype'),
-       url('../fonts/fontello/fontello.svg?885162#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+      font-family: 'fontello';
+      src: url('../fonts/fontello/fontello.eot?92560933');
+      src: url('../fonts/fontello/fontello.eot?92560933#iefix') format('embedded-opentype'),
+           url('../fonts/fontello/fontello.woff?92560933') format('woff'),
+           url('../fonts/fontello/fontello.ttf?92560933') format('truetype'),
+           url('../fonts/fontello/fontello.svg?92560933#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
 /*##font-face##*/
 
 html {
@@ -122,6 +122,27 @@ header, section, footer, aside, nav, main, article, figure {
 
 img {
   max-width: 100%;
+}
+
+.noti-bar {
+	background: #ea4434;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 1001;
+	text-align: center;
+	line-height: 20px;
+	font-size: 20px;
+	padding: 20px 0 20px 0;
+	color: #ffffff;
+}
+
+.noti-box {
+	border-radius: 5px;
+	border: 1px dashed #ea4434;
+	color: #ea4434;
+	padding: 20px;
+	width: 100%;
 }
 
 .container {
@@ -410,12 +431,12 @@ a.baan-button, a.baan-button:visited, a.baan-button:active, a.baan-button:hover 
 
 .btn-confirm:focus, .btn-confirm:hover, .btn-confirm:active:focus {
 	color: #FFF;
-	background: rgba(182, 45, 30, 1);
+	background: rgba(209, 36, 19, 1);
 	-webkit-appearance: none;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	border: 1px solid rgba(182, 45, 30, 1);
+	border: 1px solid rgba(209, 36, 19, 1);
 }
 
 .error-code {

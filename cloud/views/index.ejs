@@ -11,6 +11,10 @@
 
 </head>
 <body>
+	<!--<div class="noti-bar">
+		พบรหัสประจำตัวนิสิต 5730329521 ในระบบ ลงทะเบียนครั้งล่าสุด เมื่อ 26 สิงหาคม 2558 09:30 น.<br> ทดสอบ 2 บรรทัด
+	</div>-->
+
 	<section class="result-section offset" id="result_section" style="z-index: 2;">
 		<div class="container-fluid" style="background: #ffffff;">
 			<div class="row text-center" style="margin: 30px 0 0 0;">
@@ -23,40 +27,32 @@
 			</div>
 			<div class="section-header-seperator"></div>
 
-			<div class="row" style="margin-top: 50px; margin-bottom: 50px;" id="recheck_form">
+			<div class="row" style="margin-top: 50px; margin-bottom: 0px;" id="recheck_form">
 				<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center content-text">
 					<form class="">
 						<div class="form-group">
 							<label for="studentID" class="control-label">รหัสประจำตัวนิสิต (Student ID)</label>
 							<input type="text" class="form-control studentid-input" id="studentID" placeholder="" autocomplete="off" maxlength="10">
 						</div>
-						<button id='recheck_btn' type='button' class="btn btn-confirm" autocomplete="off">ยืนยัน</button>
+						<button id='recheck_btn' type='button' class="btn btn-confirm" autocomplete="off">ลงทะเบียน</button>
 					</form>
 				</div>
 			</div>
 
-			
-
-			<!--<div class="row" style="margin-top: 10px; margin-bottom: 50px;">
+			<div class="row" style="margin-bottom: 0px; margin-top: 20px; display: none;" id="recheck_info_container">
 				<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center content-text">
-					123456
-				</div>
-			</div>-->
-
-			<div class="row" style="margin-bottom: 40px; display: none;" id="recheck_info_container">
-				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-					<div style="height: 1px; background: #aaa; margin-bottom: 15px; z-index: 0;"></div>
-				</div>
-				<div class="col-sm-10 col-sm-offset-1 text-center" id="recheck_info">
+						<div class="noti-box">
+							<span class="icon-error" style="font-family: 'fontello'; font-size: 25px;">&#xe800;</span><br>
+							พบรหัสประจำตัวนิสิต <b>5730329521</b> ในระบบ<br>ลงทะเบียนครั้งล่าสุด เมื่อ <b>26 สิงหาคม 2558 09:30 น.</b>
+						</div>
 				</div>
 			</div>
-
 		</div>
 	</section>
 
 	<footer class="footer">
 		<div class="container-fluid">
-			<div class="row" style="margin: 15px 0 13px 0;">
+			<div class="row" style="margin: 65px 0 13px 0;">
 				<div class="col-md-10 col-md-offset-1 text-center" style="padding: 0 5% 0 5%;">
 					<p class="content-text">
 						<img class="img-responsive center-block" src="imgs/sponcer.png" width="544" height="47">
@@ -72,6 +68,7 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
 	<script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+	<script src="js/moment-with-locales.js">
 	<script src="js/pace.min.js"></script>
 	<script src="js/index.js"></script>
 </body>
